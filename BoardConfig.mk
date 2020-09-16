@@ -89,6 +89,8 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/releasetools
 # SELinux
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
+TARGET_USES_PREBUILT_VENDOR_SEPOLICY := true
+TARGET_HAS_FUSEBLK_SEPOLICY_ON_VENDOR := true
 
 # Symbols
 TARGET_LD_SHIM_LIBS := /system/lib/libshowlogo.so|libshim_showlogo.so
@@ -103,5 +105,3 @@ TARGET_COPY_OUT_PRODUCT := system/product
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 2
-
-
