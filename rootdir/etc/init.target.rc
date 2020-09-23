@@ -12,6 +12,9 @@ on init
     setprop persist.dbg.wfc_avail_ovr 1
     setprop persist.vendor.vilte_support 0
 
+    # BPF
+    setprop ro.kernel.ebpf.supported true
+
 on post-fs-data
     # Services
     setprop init.svc.console stopped
