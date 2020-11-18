@@ -123,6 +123,10 @@ PRODUCT_BOOT_JARS += \
     mediatek-telephony-base \
     mediatek-telephony-common
 
+# ImsInit hack
+PRODUCT_PACKAGES += \
+    ImsInit
+
 # Init
 PRODUCT_PACKAGES += init_certus
 PRODUCT_VENDOR_PROPERTY_BLACKLIST := \
