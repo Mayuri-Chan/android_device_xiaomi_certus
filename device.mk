@@ -20,7 +20,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 
 # IMS
 PRODUCT_PACKAGES += \
-    mtk-ims
+    mtk-ims \
+    mtk-ims-telephony
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
