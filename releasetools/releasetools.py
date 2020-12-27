@@ -17,13 +17,6 @@ def AddImage(info, basename, dest):
   info.script.AppendExtra('package_extract_file("%s", "%s");' % (name, dest))
 
 def OTA_InstallEnd(info):
-  PatchVendor(info)
   info.script.Print("Patching firmware images...")
   AddImage(info, "vbmeta.img", "/dev/block/platform/bootdevice/by-name/vbmeta")
 
-def PatchVendor(info):
-  info.script.Print("Patching vendor init scripts...")
-  info.script.AppendExtra('mount("ext4", "EMMC", "/dev/block/platform/bootdevice/by-name/vendor", "/vendor");')
-  info.script.AppendExtra('run_program("/sbin/sed", "-i", "s/wait,check,quota/latemount,wait,check,quota/", "/vendor/etc/fstab.mt6765");')
-  info.script.AppendExtra('run_program("/sbin/sed", "-i", "s/fstab.mt6765$/fstab.mt6765 --early\\n    mount_all \/vendor\/etc\/fstab.mt6765 --late/", "/vendor/etc/init/hw/init.mt6765.rc");')
-  info.script.AppendExtra('unmount("/vendor");')
