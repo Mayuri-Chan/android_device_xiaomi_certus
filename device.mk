@@ -21,6 +21,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 # IMS
 $(call inherit-product, vendor/mediatek/ims/mtk-ims.mk)
 
+PRODUCT_PACKAGES += \
+    mtk-ims-telephony
+
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
