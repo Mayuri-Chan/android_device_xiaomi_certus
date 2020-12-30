@@ -22,6 +22,9 @@ source "${HELPER}"
 
 function blob_fixup {
     case "$1" in
+        lib/libshowlogo.so)
+            "$PATCHELF" --add-needed "libshim_showlogo.so" "$2"
+            ;;
         lib/libsink.so)
             "$PATCHELF" --add-needed "libshim_vtservice.so" "$2"
             ;;
