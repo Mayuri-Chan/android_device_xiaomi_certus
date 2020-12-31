@@ -110,6 +110,7 @@ WITH_PERMISSIVE := true
 # Treble
 BUILD_WITHOUT_VENDOR := true
 TARGET_COPY_OUT_VENDOR := vendor
+TARGET_COPY_OUT_PRODUCT := system/product
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
