@@ -14,8 +14,10 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := $(call my-dir)
+PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/lineage_certus.mk
 
-ifneq ($(filter certus,$(TARGET_DEVICE)),)
-include $(call all-makefiles-under,$(LOCAL_PATH))
-endif
+COMMON_LUNCH_CHOICES := \
+    lineage_certus-user \
+    lineage_certus-userdebug \
+    lineage_certus-eng

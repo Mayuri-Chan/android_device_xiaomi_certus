@@ -1,10 +1,20 @@
 [
   {
-    "repository": "android_packages_resources_devicesettings",
-    "target_path": "packages/resources/devicesettings"
+        "remote": "github",
+        "repository": "wulan17/android_kernel_xiaomi_mt6765",
+	"target_path": "kernel/xiaomi/mt6765",
+	"branch": "ten"
   },
   {
-    "repository": "android_kernel_xiaomi_mt6765",
-    "target_path": "kernel/xiaomi/mt6765"
-  }
+	"remote": "github",
+	"repository": "wulan17/proprietary_vendor_xiaomi",
+	"target_path": "vendor/xiaomi",
+	"branch": "10"
+  },
+  {
+	"remote": "github",
+	"repository": "wulan17/linaro_arm-linux-gnueabihf-7.5",
+	"target_path": "prebuilts/gcc/linux-x86/arm/arm-linux-gnueabihf-7.5",
+	"branch": "master"
+  },
 ]
