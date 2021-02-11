@@ -92,10 +92,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
-# Symbols 
+# Symbols
 PRODUCT_PACKAGES += \
-    libshim_showlogo
-    
+    libshim_showlogo \
+    libshim_imsma_socketwrapper
+
 # System properties
 -include $(LOCAL_PATH)/product_prop.mk
 

@@ -92,6 +92,7 @@ BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
 
 # Symbols
 TARGET_LD_SHIM_LIBS := /system/lib/libshowlogo.so|libshim_showlogo.so
+TARGET_LD_SHIM_LIBS += /system/lib/libimsma_socketwrapper.so|libshim_imsma_socketwrapper.so
 
 # Treble
 BOARD_VNDK_VERSION  := current
