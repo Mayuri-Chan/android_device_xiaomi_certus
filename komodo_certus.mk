@@ -17,15 +17,17 @@
 # Inherit from device
 $(call inherit-product, device/xiaomi/certus/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common KomodoOS stuff.
+$(call inherit-product, vendor/komodo/config/common_full_phone.mk)
+CURRENT_BUILD_TYPE := nogapps
+KOMODO_VARIANT := RELEASE
 
 # Boot animaton
 TARGET_BOOT_ANIMATION_RES := 720
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := certus
-PRODUCT_NAME := lineage_certus
+PRODUCT_NAME := komodo_certus
 PRODUCT_BRAND := xiaomi
 PRODUCT_MODEL := Redmi 6 / Redmi 6A
 PRODUCT_MANUFACTURER := Xiaomi

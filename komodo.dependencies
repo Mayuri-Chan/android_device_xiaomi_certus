@@ -3,7 +3,7 @@
         "remote": "github",
         "repository": "wulan17/android_kernel_xiaomi_mt6765",
 	"target_path": "kernel/xiaomi/mt6765",
-	"branch": "ten"
+	"branch": "11-nad"
   },
   {
 	"remote": "github",
