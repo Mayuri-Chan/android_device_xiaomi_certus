@@ -96,6 +96,10 @@ TARGET_USES_PREBUILT_VENDOR_SEPOLICY := true
 TARGET_HAS_FUSEBLK_SEPOLICY_ON_VENDOR := true
 SELINUX_IGNORE_NEVERALLOWS := true
 
+# Shims
+TARGET_LD_SHIM_LIBS := \
+    /system/lib/libshowlogo.so|libshim_showlogo.so
+
 # Treble
 BOARD_VNDK_VERSION  := current
 TARGET_COPY_OUT_VENDOR := vendor
