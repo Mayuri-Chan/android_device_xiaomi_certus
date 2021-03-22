@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nad_certus.mk
+    $(LOCAL_DIR)/komodo_certus.mk
 
 COMMON_LUNCH_CHOICES := \
-    nad_certus-user \
-    nad_certus-userdebug \
-    nad_certus-eng
+    komodo_certus-user \
+    komodo_certus-userdebug \
+    komodo_certus-eng
