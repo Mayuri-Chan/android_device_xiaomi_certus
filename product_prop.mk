@@ -21,7 +21,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.sys.fw.bservice_limit=5 \
     ro.sys.fw.bservice_age=5000 \
     ro.am.reschedule_service=true \
-    ro.sys.fw.bg_apps_limit=24 
+    ro.sys.fw.bg_apps_limit=24
 
 # OMX
 PRODUCT_PRODUCT_PROPERTIES  += \
