@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_certus.mk
+    $(LOCAL_DIR)/nad_certus.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_certus-user \
-    lineage_certus-userdebug \
-    lineage_certus-eng
+    nad_certus-user \
+    nad_certus-userdebug \
+    nad_certus-eng
