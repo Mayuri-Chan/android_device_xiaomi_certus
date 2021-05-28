@@ -119,7 +119,8 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Symbols
 PRODUCT_PACKAGES += \
-    libshim_showlogo
+    libshim_showlogo \
+    libshim_vtservice
 
 # System properties
 -include $(LOCAL_PATH)/product_prop.mk
