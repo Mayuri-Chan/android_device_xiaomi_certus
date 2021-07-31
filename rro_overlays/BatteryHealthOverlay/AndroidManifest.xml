@@ -4,8 +4,7 @@
     android:versionName="1.0">
     <application
     	android:hasCode="false"
-    	android:label="@string/overlay_name"
-    	android:extractNativeLibs="false" />
+    	android:label="@string/overlay_name" />
 
     <overlay
     	android:targetPackage="com.android.settings"
