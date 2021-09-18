@@ -118,9 +118,5 @@ PRODUCT_PACKAGES += \
     ImsInit \
     TrebleApp
 
-# Trust HAL
-PRODUCT_PACKAGES += \
-    lineage.trust@1.0-service
-
 # Call proprietary blob setup
 $(call inherit-product-if-exists, vendor/xiaomi/mt6765-common/mt6765-common-vendor.mk)
