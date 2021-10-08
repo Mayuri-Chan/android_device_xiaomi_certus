@@ -98,12 +98,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.fingerprint.xml \
     $(LOCAL_PATH)/permissions/privapp-permissions-imsinit.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-imsinit.xml \
-    $(LOCAL_PATH)/permissions/privapp-permissions-certus.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-certus.xml \
-    $(LOCAL_PATH)/permissions/interfaces.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/interfaces.xml
-
-# Privapp-permissions whitelist for PhhTrebleApp
-PRODUCT_COPY_FILES += \
-       $(LOCAL_PATH)/permissions/privapp-permissions-me.phh.treble.app.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-me.phh.treble.app.xml
+    $(LOCAL_PATH)/permissions/privapp-permissions-certus.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-certus.xml
 
 # RCS
 PRODUCT_PACKAGES += \
@@ -129,8 +124,7 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # ImsInit hack
 PRODUCT_PACKAGES += \
-    ImsInit \
-    TrebleApp
+    ImsInit
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
