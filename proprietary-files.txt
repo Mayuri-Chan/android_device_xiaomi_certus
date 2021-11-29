@@ -1,0 +1,39 @@
+# GPS
+vendor/bin/hw/android.hardware.gnss@2.0-service-mediatek
+vendor/bin/lbs_hidl_service
+
+# Graphics
+vendor/bin/hw/vendor.mediatek.hardware.gpu@1.0-service
+vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
+
+# Microtrust
+vendor/bin/hw/vendor.microtrust.hardware.capi@2.0-service
+
+# Misc
+vendor/bin/teei_daemon
+
+# Modem
+vendor/bin/ipsec_mon
+
+# Power
+vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service
+
+# Radio
+vendor/bin/epdg_wod
+vendor/bin/hw/mtkfusionrild
+vendor/bin/hw/vendor.mediatek.hardware.mms@1.5-service
+vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service
+vendor/bin/muxreport
+vendor/bin/netdagent
+vendor/bin/wmt_launcher
+vendor/bin/wmt_loader
+
+# Sensors
+vendor/bin/hw/android.hardware.sensors@2.0-service-mediatek
+
+# Thermal
+vendor/bin/thermal
+
+# WiFi
+vendor/bin/stp_dump3
+vendor/bin/wlan_assistant
