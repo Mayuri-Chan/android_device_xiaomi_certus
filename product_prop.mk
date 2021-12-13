@@ -42,6 +42,10 @@ PRODUCT_PRODUCT_PROPERTIES  += \
     ro.mtk_perf_fast_start_win=1 \
     ro.mtk_perf_response_time=1
 
+# Screen Density
+PRODUCT_PRODUCT_PROPERTIES  += \
+    ro.sf.lcd_density=295
+
 # Surfaceflinger
 PRODUCT_PRODUCT_PROPERTIES  += \
    ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
