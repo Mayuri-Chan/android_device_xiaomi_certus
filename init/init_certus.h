@@ -22,6 +22,10 @@ struct properties {
 			   *codename = nullptr,
 			   *description = nullptr,
 			   *fingerprint = nullptr;
+			   *build_security_patch_date = nullptr;
+			   *build_tags = nullptr;
+			   *build_type = nullptr;
+			   *build_version_release = nullptr;
 };
 
 bool get_properties(properties &props);

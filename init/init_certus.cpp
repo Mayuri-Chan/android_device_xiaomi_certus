@@ -32,11 +32,13 @@ using android::base::Trim;
 
 constexpr auto
 	CACTUS_PROPERTIES = properties{"Redmi 6A", "cactus", "cactus-user 9 PPR1.180610.011 V11.0.8.0.PCBMIXM release-keys",
-	                               "xiaomi/cactus/cactus:9/PPR1.180610.011/V11.0.8.0.PCBMIXM:user/release-keys"};
+								   "xiaomi/cactus/cactus:9/PPR1.180610.011/V11.0.8.0.PCBMIXM:user/release-keys",
+								   "2020-05-01", "release-keys", "user", "9"};
 
 constexpr auto
 	CEREUS_PROPERTIES = properties{"Redmi 6", "cereus", "cereus-user 9 PPR1.180610.011 V11.0.4.0.PCGMIXM release-keys",
-	                               "xiaomi/cereus/cereus:9/PPR1.180610.011/V11.0.4.0.PCGMIXM:user/release-keys"};
+								   "xiaomi/cereus/cereus:9/PPR1.180610.011/V11.0.4.0.PCGMIXM:user/release-keys",
+								   "2020-05-01", "release-keys", "user", "9"};
 
 bool get_board_id(std::string &out) {
 	std::string str;
