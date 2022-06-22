@@ -1,27 +1,21 @@
 [
   {
         "remote": "github",
-        "repository": "kbt69/android_kernel_xiaomi_mt6765",
+        "repository": "Mayuri-Chan/android_kernel_xiaomi_mt6765",
 	"target_path": "kernel/xiaomi/mt6765",
 	"branch": "10-alps"
   },
   {
 	"remote": "github",
-	"repository": "kbt69/proprietary_vendor_xiaomi",
+	"repository": "Mayuri-Chan/proprietary_vendor_xiaomi",
 	"target_path": "vendor/xiaomi",
-	"branch": "11-alps"
+	"branch": "12.1"
   },
   {
 	"remote": "github",
-	"repository": "kbt69/libaptX",
+	"repository": "Mayuri-Chan/libaptX",
 	"target_path": "external/libaptx",
 	"branch": "main"
-  },
-  {
-	"remote": "github",
-	"repository": "LineageOS/android_packages_services_Telephony",
-	"target_path": "packages/services/Telephony",
-	"branch": "lineage-17.1"
   },
   {
         "remote": "github",
