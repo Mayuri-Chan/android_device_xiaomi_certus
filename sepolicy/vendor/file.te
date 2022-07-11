@@ -1,0 +1,4 @@
+type proc_last_kmsg, fs_type, proc_type;
+type sysfs_emi_ctrl, sysfs_type, fs_type;
+type vpud_native_exec, exec_type, file_type, vendor_file_type;
+type vpud_native, domain;

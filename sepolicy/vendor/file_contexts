@@ -1,0 +1,2 @@
+/sys/bus/platform/drivers/emi_ctrl(/.*)? u:object_r:sysfs_emi_ctrl:s0
+/(system\/vendor|vendor)/bin/vpud        u:object_r:vpud_native_exec:s0
