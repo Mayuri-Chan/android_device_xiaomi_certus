@@ -108,6 +108,7 @@ SIM_COUNT := 2
 BOARD_SECCOMP_POLICY := $(DEVICE_PATH)/seccomp
 
 # Sepolicy
+include device/mediatek/sepolicy/sepolicy.mk
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
