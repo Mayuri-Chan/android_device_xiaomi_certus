@@ -53,7 +53,7 @@ TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_certus
 # Kernel
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32S1,32S1
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
-BOARD_KERNEL_CMDLINE += androidboot.boot_devices=bootdevice androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 TARGET_KERNEL_SOURCE := kernel/xiaomi/mt6765
 TARGET_KERNEL_CONFIG := certus_defconfig
 BOARD_KERNEL_BASE := 0x40000000
