@@ -83,14 +83,6 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-service \
     android.hardware.graphics.mapper@2.0-impl-2.1
 
-# Dynamic partitions
-PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := true
-PRODUCT_USE_DYNAMIC_PARTITIONS := true
-
-# Fastboot
-PRODUCT_PACKAGES += \
-    fastbootd
-
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.certus
@@ -265,4 +257,5 @@ include $(DEVICE_PATH)/props.mk
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 # Vendor
+$(call inherit-product, vendor/xiaomi/mt6765-common/mt6765-common-vendor.mk)
 $(call inherit-product, vendor/xiaomi/certus/certus-vendor.mk)
