@@ -57,4 +57,5 @@ void vendor_load_properties() {
 		property_override("ro.system.build.fingerprint", props.fingerprint);
 		property_override("ro.bootimage.build.fingerprint", props.fingerprint);
 	}
+	property_override("ro.control_privapp_permissions", "log");
 }
