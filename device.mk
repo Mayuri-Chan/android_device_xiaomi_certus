@@ -19,7 +19,11 @@ DEVICE_PATH := device/xiaomi/certus
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := framework-res
 DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
+ifneq ($(findstring lineage, $(TARGET_PRODUCT)),)
 DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay-lineage
+else ifneq ($(findstring nad, $(TARGET_PRODUCT)),)
+DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay-nad
+endif
 
 # Screen Density
 PRODUCT_AAPT_PREF_CONFIG := xhdpi

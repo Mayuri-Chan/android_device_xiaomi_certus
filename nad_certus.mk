@@ -22,8 +22,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 # Inherit from Redmi 6/A device
 $(call inherit-product, device/xiaomi/certus/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common NusantaraProject stuff.
+$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+
+# Official tag
+NAD_BUILD_TYPE := DEV
 
 # Boot Animation RES
 TARGET_BOOT_ANIMATION_RES := 720
@@ -34,6 +37,6 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := certus
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := Redmi 6/A
-PRODUCT_NAME := lineage_certus
+PRODUCT_NAME := nad_certus
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
