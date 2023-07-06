@@ -3,7 +3,7 @@
         "remote": "github",
         "repository": "Mayuri-Chan/android_kernel_xiaomi_mt6765",
 	"target_path": "kernel/xiaomi/mt6765",
-	"branch": "10-alps"
+	"branch": "alps-0.6"
   },
   {
 	"remote": "github",
